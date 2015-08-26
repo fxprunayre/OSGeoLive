@@ -1,6 +1,41 @@
 OSGeo Live GIS Disc
 ===================
 
+Version 9.0beta1
+====================
+
+ * QGIS 2.8.3 LTR
+ * GRASS 7.0.1
+ * GeoServer 2.7.2
+ * GeoMoose 2.8.0
+ * New GMT debian package
+ * New JOSM debian package
+ * New mbsystem debian package
+ * OSSIM 1.8.18
+ * MapProxy 1.8.0
+ * OpenLayers 3.7.0
+ * OpenCPN 4.0.0
+ * GPSDrive 64bit package added
+ * Ushahidi build fixed (#1509)
+ * VirtualBox guest additions installed by default
+ * More R visualization packages
+ * Updated QGIS plugins
+
+Version 9.0alpha2
+====================
+
+ * Upgrade to tomcat7
+ * new Ubuntu manual included
+ * 52North SOS upgrade to 4.3.0
+ * GeoMajas upgrade to 2.4.0
+ * MapBender upgrade to 3.0.5.1
+ * EOxServer upgrade to 0.4.0
+ * Cartaro upgrade to 1.8
+ * GeoNetwork 3.0.1
+ * Fixed OSSIM installation
+ * uDig installer fix to work on 64 bit
+ * OSGeoLive documentation installed from deb package now
+
 Version 9.0alpha1
 ====================
 

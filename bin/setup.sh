@@ -146,9 +146,8 @@ echo "----"
 #cp ../sources.list.d/ubuntugis.list /etc/apt/sources.list.d/
 
 if [ "$BUILD_MODE" = "release" ] ; then
-   # # To revert when release ppa is populated
-   # cp ../sources.list.d/osgeolive.list /etc/apt/sources.list.d/
-   cp ../sources.list.d/osgeolive-nightly.list /etc/apt/sources.list.d/
+   cp ../sources.list.d/osgeolive.list /etc/apt/sources.list.d/
+   # cp ../sources.list.d/osgeolive-nightly.list /etc/apt/sources.list.d/
 else
    cp ../sources.list.d/osgeolive-nightly.list /etc/apt/sources.list.d/
 fi
@@ -187,6 +186,11 @@ apt-get install --yes apturl
 # Install build stuff (temporarily?)
 apt-get install --yes gcc build-essential devscripts pbuilder fakeroot \
   svn-buildpackage lintian debhelper pkg-config dpkg-dev cmake
+
+# Install virtualbox guest additions
+# If running on virtualbox this will allow us to use full-screen/usb2/...
+# If running outside virtualbox the drivers will not be loaded
+apt-get install --yes virtualbox-guest-dkms virtualbox-guest-x11 virtualbox-guest-utils
 
 # install the python .deb maker
 apt-get install --yes python-stdeb python-all-dev
